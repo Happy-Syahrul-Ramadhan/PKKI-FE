@@ -1,34 +1,15 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
 import Banner from "../components/Banner";
-import Keynote from "../components/Keynote";
-import Timeline from "../components/Timeline";
-import About from "../components/About";
-import Topics from "../components/Topics";
-import Pricelist from "../components/Pricelist";
-import Venue from "../components/Venue";
-import Countdown from "../components/Countdown";
-import Trip from "../components/Trip";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import Speaker from "../components/Speaker";
 
 const Home = () => {
     return (
     <>
         <Navbar/>
         <Banner/>
-        <About/>
-        <Timeline/>
-        <Topics/>
-        <Keynote/>
-        <Speaker/>
-        <Pricelist/>
-        <Countdown/>
-        <Venue/>
-        <Trip/>
-        <Contact/>
-        <Footer/>
+        <div className="h-screen text-white text-center text-xl font-bold mt-20">
+            Helo
+        </div>
     </>
     )
 }

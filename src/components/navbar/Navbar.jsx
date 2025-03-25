@@ -28,20 +28,20 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center space-x-4">
         <Link to="/">
-          <img src={Logo} alt="Logo" className='w-28 md:w-40' />
+          <img src={Logo} alt="Logo" className='w-18 md:w-20' />
         </Link>
         </div>
         <div className="hidden md:flex space-x-4 font-bold font-spaceGrotesk">
           <Link to="/" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Home</Link>
-          <Link to="/program" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Program</Link>
-          <Link to="/author" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Author</Link>
-          <Link to="/committee" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Committee</Link>
-          <Link to="/information" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Information</Link>
-          <Link to="/schedule" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Schedule</Link>
+          <Link to="/Starter" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Starter</Link>
+          <Link to="/Starter" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Starter</Link>
+          <Link to="/Starter" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Starter</Link>
+          <Link to="/Starter" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Starter</Link>
+          <Link to="/Starter" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Starter</Link>
         </div>
         <div className="hidden md:flex space-x-4 font-spaceGrotesk font-bold">
-          <Link to="https://fsrecon.itera.ac.id/login" className={`mt-2 nav-link ${isSticky ? 'text-colorGreen' : 'text-colorGreen'}`}>Login</Link>
-          <Link to="https://fsrecon.itera.ac.id/register" className={`nav-link ${isSticky ? 'bg-colorGreen text-black' : 'bg-colorGreen text-black'} px-4 py-2 rounded-full`}>Register</Link>
+          <Link to="login" className={`mt-2 nav-link ${isSticky ? 'text-colorGreen' : 'text-colorGreen'}`}>Login</Link>
+          <Link to="register" className={`nav-link ${isSticky ? 'bg-colorGreen text-black' : 'bg-colorGreen text-black'} px-4 py-2 rounded-full`}>Register</Link>
         </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>
@@ -54,13 +54,13 @@ const Navbar = () => {
       {isOpen && (
         <div className={`md:hidden p-2 font-spaceGrotesk font-medium ${isSticky ? 'bg-green-900 bg-opacity-40 font-bold text-white' : 'bg-green-900 font-bold text-white'}`}>
           <Link to="/" className="block nav-link py-2 mx-4">Home</Link>
-          <Link to="/program" className="block nav-link py-2 mx-4">Program</Link>
-          <Link to="/author" className="block nav-link py-2 mx-4">Author</Link>
-          <Link to="/committee" className="block nav-link py-2 mx-4">Committee</Link>
-          <Link to="/information" className="block nav-link py-2 mx-4">Information</Link>
-          <Link to="/schedule" className="block nav-link py-2 mx-4">Schedule</Link>
-          <Link to="https://fsrecon.itera.ac.id/login" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-black rounded-full my-3">Login</Link>
-          <Link to="https://fsrecon.itera.ac.id/register" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-black rounded-full my-3">Register</Link>
+          <Link to="/Starter" className="block nav-link py-2 mx-4">Starter</Link>
+          <Link to="/Starter" className="block nav-link py-2 mx-4">Starter</Link>
+          <Link to="/Starter" className="block nav-link py-2 mx-4">Starter</Link>
+          <Link to="/Starter" className="block nav-link py-2 mx-4">Starter</Link>
+          <Link to="/Starter" className="block nav-link py-2 mx-4">Starter</Link>
+          <Link to="login" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-black rounded-full my-3">Login</Link>
+          <Link to="register" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-black rounded-full my-3">Register</Link>
         </div>
       )}
     </nav>
