@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center space-x-4">
         <Link to="/">
-          <img src={Logo} alt="Logo" className='w-18 md:w-20' />
+          <img src={Logo} alt="Logo" className='w-20 md:w-40' />
         </Link>
         </div>
         <div className="hidden md:flex space-x-4 font-bold font-spaceGrotesk">
@@ -40,8 +40,8 @@ const Navbar = () => {
           <Link to="/Starter" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Starter</Link>
         </div>
         <div className="hidden md:flex space-x-4 font-spaceGrotesk font-bold">
-          <Link to="login" className={`mt-2 nav-link ${isSticky ? 'text-colorGreen' : 'text-colorGreen'}`}>Login</Link>
-          <Link to="register" className={`nav-link ${isSticky ? 'bg-colorGreen text-black' : 'bg-colorGreen text-black'} px-4 py-2 rounded-full`}>Register</Link>
+          <Link to="login" className={`mt-2 nav-link ${isSticky ? 'text-[#B82132]' : 'text-[#B82132]'}`}>Login</Link>
+          <Link to="register" className={`nav-link ${isSticky ? 'bg-[#B82132] text-white' : 'bg-[#B82132] text-white'} px-4 py-2 rounded-full`}>Register</Link>
         </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>
@@ -59,8 +59,8 @@ const Navbar = () => {
           <Link to="/Starter" className="block nav-link py-2 mx-4">Starter</Link>
           <Link to="/Starter" className="block nav-link py-2 mx-4">Starter</Link>
           <Link to="/Starter" className="block nav-link py-2 mx-4">Starter</Link>
-          <Link to="login" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-black rounded-full my-3">Login</Link>
-          <Link to="register" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-black rounded-full my-3">Register</Link>
+          <Link to="login" className="block nav-link bg-[#B82132] mx-4 px-4 py-2 text-black rounded-full my-3">Login</Link>
+          <Link to="register" className="block nav-link bg-[#B82132] mx-4 px-4 py-2 text-black rounded-full my-3">Register</Link>
         </div>
       )}
     </nav>

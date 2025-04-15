@@ -10,7 +10,7 @@ const BannerCustom = ({name}) => {
                     {name}
                 </h1>
                 <h1 className="w-[75%] text-md sm:text-xl md:text-2xl lg:text-2xl text-white italic font-plusJakarta">
-                    "International Conference On Sustainability of Sciences for the Future"
+                    "Tester"
                 </h1>
             </div>
         </div>
