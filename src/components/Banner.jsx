@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IconFileDescription } from '@tabler/icons-react';
 import hero from "../assets/images/hero.png";
 
 const Banner = () => {

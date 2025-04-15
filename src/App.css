@@ -16,11 +16,12 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
+  background-color: #B82132;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transform: translateY(0);
   animation: slide-down 0.5s forwards;
-  backdrop-filter: blur(10px);
+
+  /* backdrop-filter: blur(10px); */
 }
 
 @keyframes slide-down {
