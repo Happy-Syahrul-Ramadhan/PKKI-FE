@@ -4,17 +4,17 @@ import hero from "../assets/images/hero.png";
 
 const Banner = () => {
     return (
-        <div className="bannerHome h-screen relative md:-mt-[120px]">
+        <div className="bannerHome h-screen relative md:-mt-[120px]"> 
             <div className="overlay"></div>
             <img src={hero} alt="hero" className="object-cover w-full h-full absolute" />
-            <div className="bannerContent z-10 relative mt-10 flex-row font-plusJakarta text-left px-20">
+            <div className="bannerContent z-10 relative mt-10 flex-row text-left px-5 md:px-12">
                 <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-4xl text-white mb-2">
                     Selamat Datang <br />
                     <span className="font-bold">Pusat Kelola Karya Intelektual</span> <br />
                     Institut Teknologi Sumatera
                 </h1>
                 <p className="text-white mt-10 max-w-2xl text-base md:text-md">
-                    Itsavirus provides top-tier tech teams from Asia to businesses worldwide. Delivering high quality while cutting costs by up to 60%. Join us and leverage our expertise to build, innovate, and scale.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum orci tellus, vitae tempor sapien ultrices a. Donec ullamcorper laoreet mauris, nec tincidunt lorem aliquet vitae. Aenean consectetur arcu nulla, vitae feugiat nunc egestas ut. Curabitur vitae molestie turpis, nec pretium diam. Aenean interdum consectetur mauris, sed lobortis lacus vulputate eu. 
                 </p>
                 
                 <div className="flex space-x-4 mt-8">

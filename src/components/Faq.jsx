@@ -8,7 +8,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="bg-white text-black py-16 mt-10 px-20">
+    <section className="bg-white text-black py-16 mt-10 md:px-20">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-4">FAQ</h2>
         <p className="text-sm mb-8">
@@ -26,7 +26,7 @@ const FAQ = () => {
             <div
               className={`
                 overflow-hidden transition-all duration-500 ease-in-out 
-                ${open === 0 ? 'max-h-96 opacity-100 scale-y-100' : 'max-h-0 opacity-0 scale-y-50'}
+                ${open === 0 ? 'max-h-96 opacity-100 scale-y-100 border' : 'max-h-0 opacity-0 scale-y-50'}
               `}
             >
               {(open === 0 || open === null) && (

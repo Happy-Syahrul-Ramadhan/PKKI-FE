@@ -105,7 +105,7 @@ const GuidePage = () => {
     <>
       <Navbar />
       <BannerCustom name="Panduan" />
-      <div className="min-h-screen bg-gray-100 flex items-start py-8 px-20 mt-20">
+      <div className="flex items-start py-8 px-20 z-99">
         {/* Sidebar */}
         <div className="w-56 bg-white rounded-l-2xl shadow-md p-4 mr-4">
           <ul>
@@ -124,7 +124,7 @@ const GuidePage = () => {
           </ul>
         </div>
         {/* Main Content */}
-        <div className="flex-1 bg-white rounded-r-2xl shadow-2xl p-8">
+        <div className="flex-1 bg-white rounded-r-2xl shadow-md p-8">
           {contentData[activeMenu]}
         </div>
       </div>

@@ -30,7 +30,7 @@ export default {
         raleway: ["Raleway", "sans-serif"],
         spaceGrotesk: ["Space Grotesk", "sans-serif"],
         plusJakarta: ["Plus Jakarta Sans", "sans-serif"],
-        manRope: ["Manrope", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
         body: ["Inter", "sans-serif"],
       },
 
