@@ -26,7 +26,7 @@ const LoginPage = () => {
           />
           <h2 className="text-2xl font-bold mb-2">Masuk Sistem PKKI</h2>
           <p className="text-gray-600 text-sm mb-6">
-            Itsavirus provides top-tier tech teams from Asia to businesses worldwide. Delivering high quality while cutting costs by up to 60%. Join us and leverage our expertise to build, innovate, and scale.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum orci tellus, vitae tempor sapien ultrices a. 
           </p>
           <form>
             <div className="mb-4">
@@ -45,12 +45,21 @@ const LoginPage = () => {
                 placeholder="Password"
               />
             </div>
+            <div className="flex flex-col gap-4">
             <button
               type="submit"
               className="w-full bg-red-700 hover:bg-red-800 text-white py-3 rounded-full font-medium transition"
             >
               Masuk Sistem
             </button>
+            <a href="/register">
+            <button
+              className="w-full border border-red-700 hover:bg-red-800 text-red-700 hover:text-white py-3 rounded-full font-medium transition"
+            >
+              Buat Akun
+            </button>
+            </a>
+            </div>
           </form>
         </div>
       </div>

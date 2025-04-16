@@ -26,7 +26,7 @@ const RegisterPage = () => {
           />
           <h2 className="text-2xl font-bold mb-2">Daftar Akun</h2>
           <p className="text-gray-600 text-sm mb-6">
-            Itsavirus provides top-tier tech teams from Asia to businesses worldwide. Delivering high quality while cutting costs by up to 60%. Join us and leverage our expertise to build, innovate, and scale.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum orci tellus, vitae tempor sapien ultrices a.
           </p>
           <form>
             <div className="mb-4">
