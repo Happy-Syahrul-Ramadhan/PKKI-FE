@@ -4,10 +4,10 @@ import hero from "../assets/images/hero.png";
 
 const Banner = () => {
     return (
-        <div className="bannerHome h-screen relative md:-mt-[120px]">
+        <div className="bannerHome h-screen relative md:-mt-[120px]"> 
             <div className="overlay"></div>
             <img src={hero} alt="hero" className="object-cover w-full h-full absolute" />
-            <div className="bannerContent z-10 relative mt-10 flex-row font-plusJakarta text-left px-20">
+            <div className="bannerContent z-10 relative mt-10 flex-row font-plusJakarta text-left px-5 md:px-12">
                 <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-4xl text-white mb-2">
                     Selamat Datang <br />
                     <span className="font-bold">Pusat Kelola Karya Intelektual</span> <br />

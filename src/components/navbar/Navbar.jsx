@@ -84,7 +84,7 @@ const Navbar = () => {
             <img src={Logo} alt="Logo" className='w-20 md:w-40' />
           </Link>
         </div>
-        <div className="hidden md:flex space-x-4 font-bold font-spaceGrotesk">
+        <div className="hidden md:flex space-x-4 font-manrope">
           <div 
             className="relative group"
             onClick={() => setActiveDropdown(activeDropdown === 'home' ? null : 'home')}
@@ -155,7 +155,7 @@ const Navbar = () => {
           <Link to="/dokumen" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Dokumen</Link>
           <Link to="/kontak" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Kontak</Link>
         </div>
-        <div className="hidden md:flex space-x-4 font-spaceGrotesk font-bold">
+        <div className="hidden md:flex space-x-4 font-manrope">
           <Link to="/login" className={`mt-2 nav-link ${isSticky ? 'text-white' : 'text-[#B82132]'}`}>Login</Link>
           <Link to="/register" className={`nav-link ${isSticky ? 'bg-white text-[#B82132]' : 'bg-[#B82132] text-white'} px-4 py-2 rounded-full`}>Register</Link>
         </div>
@@ -169,7 +169,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className={`md:hidden p-2 font-spaceGrotesk font-medium ${isSticky ? 'bg-[#B82132] bg-opacity-40 font-bold text-white' : 'bg-[#B82132] font-bold text-white'}`}>
+        <div className={`md:hidden p-2 font-manrope font-medium ${isSticky ? 'bg-[#B82132] bg-opacity-40 text-white' : 'bg-[#B82132] text-white'}`}>
           <div 
             className="flex items-center justify-between px-4 py-2 cursor-pointer"
             onClick={() => toggleMobileDropdown('home')}

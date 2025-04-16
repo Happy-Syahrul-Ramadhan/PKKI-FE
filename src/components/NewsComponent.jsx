@@ -42,15 +42,15 @@ const NewsSection = () => {
     const NewsItem = ({ news, className, mainItem = false }) => (
         <div className={`relative overflow-hidden rounded-lg group ${className}`}>
             <div className="w-full h-full flex items-center justify-center">
-                <img 
-                    src={news.image} 
-                    alt={news.title} 
+                <img
+                    src={news.image}
+                    alt={news.title}
                     className="object-cover w-full h-full absolute inset-0 transition-transform duration-300 group-hover:scale-110"
                 />
             </div>
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300"></div>
-            <div className="absolute inset-0 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="text-white transform translate-y-10 group-hover:translate-y-0 transition-transform duration-300">
+            <div className="absolute inset-0 flex items-end p-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                <div className="text-white transform translate-y-0 md:translate-y-10 md:group-hover:translate-y-0 transition-transform duration-300">
                     <h3 className={`${mainItem ? 'text-xl' : 'text-lg'} font-semibold`}>{news.title}</h3>
                     <p className={`${mainItem ? 'text-base' : 'text-sm'} mt-1`}>{news.description}</p>
                     <p className={`${mainItem ? 'text-sm' : 'text-xs'} mt-2 opacity-80`}>{news.date}</p>
@@ -64,28 +64,37 @@ const NewsSection = () => {
             <h1 className='text-2xl font-bold mb-2'>Berita Terkini</h1>
             <p className='text-sm text-gray-600 mb-8'>Berita terbaru seputar Hak Kekayaan Intelektual</p>
 
-            <div className="grid grid-cols-4 grid-rows-2 gap-4 h-[500px]">
-                <NewsItem 
-                    news={mainNews} 
-                    className="col-span-1 row-span-2" 
+            <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto">
+                <NewsItem
+                    news={mainNews}
+                    className="row-span-1 md:col-span-1 md:row-span-2 min-h-[200px]"
                     mainItem={true}
                 />
-                
-                <NewsItem 
-                    news={secondaryNews[0]} 
-                    className="col-span-3 row-span-1" 
+
+                <NewsItem
+                    news={secondaryNews[0]}
+                    className="row-span-1 md:col-span-1 md:row-span-1 min-h-[200px]"
                 />
-                
-                <NewsItem 
-                    news={secondaryNews[1]} 
-                    className="col-span-2 row-span-1" 
+
+                <NewsItem
+                    news={secondaryNews[1]}
+                    className="row-span-1 md:col-span-2 md:row-span-1 min-h-[200px]"
                 />
-                
-                <NewsItem 
-                    news={secondaryNews[2]} 
-                    className="col-span-1 row-span-1" 
+
+                <NewsItem
+                    news={secondaryNews[2]}
+                    className="row-span-1 md:col-span-1 md:row-span-1 min-h-[200px]"
                 />
+                <NewsItem
+                    news={secondaryNews[2]}
+                    className="row-span-1 md:col-span-1 md:row-span-1 min-h-[200px]"
+                />
+                <NewsItem
+                    news={secondaryNews[2]}
+                    className="row-span-1 md:col-span-1 md:row-span-1 min-h-[200px]"
+                />                                
             </div>
+
         </div>
     );
 };

@@ -18,7 +18,7 @@ const ServiceCard = ({ icon, title, subtitle, link }) => {
 const ServiceCards = () => {
     return (
         <div className="container mx-auto px-4 relative z-10 mt-[-70px] flex justify-center">
-            <div className="grid grid-cols-3 gap-5 max-w-5xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl">
                 <ServiceCard 
                     icon={<IconAward stroke={1.5} className="h-12 w-12" />}
                     title="Hak Cipta"
@@ -41,5 +41,6 @@ const ServiceCards = () => {
         </div>
     );
 };
+
 
 export default ServiceCards;

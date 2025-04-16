@@ -2,7 +2,7 @@ import React from 'react';
 
 const Team = () => {
   return (
-    <section className="bg-[#b21f2d] text-white py-16 mt-20 px-20">
+    <section className="bg-[#b21f2d] text-white py-16 mt-20 md:px-20">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-4">TIM PKKI ITERA</h2>
         <p className="text-sm mb-8">
