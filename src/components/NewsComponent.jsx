@@ -84,7 +84,7 @@ const NewsSection = () => {
             <h1 className='text-2xl font-bold mb-2'>Berita Terkini</h1>
             <p className='text-sm text-gray-600 mb-8'>Berita terbaru seputar Hak Kekayaan Intelektual</p>
 
-            <div className="grid grid-cols-4 grid-rows-1 gap-4 h-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 h-auto">
                 <NewsItem
                     news={mainNews}
                     className="min-h-[200px]"
