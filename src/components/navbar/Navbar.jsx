@@ -148,17 +148,17 @@ const Navbar = () => {
             {activeDropdown === 'rekap' && renderDesktopDropdown('rekap')}
           </div>
 
-          <Link to="/panduan" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Panduan</Link>
+          <Link to="/panduan" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Kegiatan</Link>
           <Link to="/infografis" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Infografis</Link>
           <Link to="/news" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Berita</Link>
-          <Link to="/katalog" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Katalog</Link>
-          <Link to="/dokumen" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Dokumen</Link>
+          {/* <Link to="/katalog" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Katalog</Link> */}
+          {/* <Link to="/dokumen" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Dokumen</Link> */}
           <Link to="/kontak" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Kontak</Link>
         </div>
-        <div className="hidden md:flex space-x-4 font-manrope">
+        {/* <div className="hidden md:flex space-x-4 font-manrope">
           <Link to="/login" className={`mt-2 nav-link ${isSticky ? 'text-white' : 'text-[#B82132]'}`}>Login</Link>
           <Link to="/register" className={`nav-link ${isSticky ? 'bg-white text-[#B82132]' : 'bg-[#B82132] text-white'} px-4 py-2 rounded-full`}>Register</Link>
-        </div>
+        </div> */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -208,7 +208,7 @@ const Navbar = () => {
             className="flex items-center justify-between px-4 py-2 cursor-pointer"
             onClick={() => toggleMobileDropdown('rekap')}
           >
-            <Link to="/rekap" className="block nav-link">Rekap</Link>
+            <Link to="/rekap" className="block nav-link">Laporan</Link>
             <svg 
               className={`w-4 h-4 transform transition-transform ${mobileActiveDropdown === 'rekap' ? 'rotate-180' : ''}`} 
               fill="none" 
