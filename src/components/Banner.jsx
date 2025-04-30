@@ -21,13 +21,13 @@ const Banner = () => {
                     <Link 
                         to="/daftar-hak-paten" 
                         className="bg-[#B82132] text-white px-6 py-3 rounded-full hover:bg-red-800 transition duration-300">
-                        Daftar Hak Paten
+                        Kontak Kami
                     </Link>
-                    <Link 
+                    {/* <Link 
                         to="/kontak" 
                         className="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition duration-300">
                         Kontak Kami
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </div>

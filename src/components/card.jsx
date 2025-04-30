@@ -11,7 +11,7 @@ const ServiceCard = ({ icon, title, subtitle, link }) => {
             </div>
             <h4 className="text-xl font-semibold">{title}</h4>
             <Link to={link} className="text-sm text-white underline mt-2">{subtitle}</Link>
-        </div>  
+        </div>
     );
 };
 
@@ -19,21 +19,33 @@ const ServiceCards = () => {
     return (
         <div className="container mx-auto px-4 relative z-10 mt-[-70px] flex justify-center">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl">
-                <ServiceCard 
+                <ServiceCard
                     icon={<IconAward stroke={1.5} className="h-12 w-12" />}
-                    title="Hak Cipta"
+                    title="Merk Paten"
                     subtitle="Lihat Detail"
                     link="/daftar-hak-cipta"
                 />
-                <ServiceCard 
+                <ServiceCard
                     icon={<IconGavel stroke={1.5} className="h-12 w-12" />}
-                    title="Paten"
+                    title="Desain Industri"
                     subtitle="Lihat Detail"
                     link="/daftar-hak-paten"
                 />
-                <ServiceCard 
+                <ServiceCard
                     icon={<IconTag stroke={1.5} className="h-12 w-12" />}
-                    title="Merk"
+                    title="Hak Cipta"
+                    subtitle="Lihat Detail"
+                    link="/daftar-hak-merk"
+                />
+                <ServiceCard
+                    icon={<IconTag stroke={1.5} className="h-12 w-12" />}
+                    title="Indikasi Geografis"
+                    subtitle="Lihat Detail"
+                    link="/daftar-hak-merk"
+                />
+                <ServiceCard
+                    icon={<IconTag stroke={1.5} className="h-12 w-12" />}
+                    title="DTLST"
                     subtitle="Lihat Detail"
                     link="/daftar-hak-merk"
                 />

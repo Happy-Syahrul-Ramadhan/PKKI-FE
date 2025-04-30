@@ -6,37 +6,23 @@ const Team = () => {
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-4">TIM PKKI ITERA</h2>
         <p className="text-sm mb-8">
-          Dari sudut pandang yang berbeda, kita bisa melihat bahwa inovasi adalah kunci untuk mencapai keberhasilan.
+          Lorem ipsum dolor
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-          {/* Member 1 */}
-          <div className="bg-white text-center text-black p-6 rounded-lg shadow-lg">
-            <div className="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-4"></div>
-            <h4 className="font-semibold text-lg">Bu Siapa Ini</h4>
-            <p className="text-sm">Bu Siapa Ini</p>
-          </div>
-
-          {/* Member 2 */}
-          <div className="bg-white text-center text-black p-6 rounded-lg shadow-lg">
-            <div className="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-4"></div>
-            <h4 className="font-semibold text-lg">Bu Siapa Ini</h4>
-            <p className="text-sm">Bu Siapa Ini</p>
-          </div>
-
-          {/* Member 3 */}
-          <div className="bg-white text-center text-black p-6 rounded-lg shadow-lg">
-            <div className="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-4"></div>
-            <h4 className="font-semibold text-lg">Bu Siapa Ini</h4>
-            <p className="text-sm">Bu Siapa Ini</p>
-          </div>
-
-          {/* Member 4 */}
-          <div className="bg-white text-center text-black p-6 rounded-lg shadow-lg">
-            <div className="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-4"></div>
-            <h4 className="font-semibold text-lg">Bu Siapa Ini</h4>
-            <p className="text-sm">Bu Siapa Ini</p>
+        <div className="overflow-x-auto">
+          <div className="flex gap-6 px-4 py-2 w-max">
+            {[...Array(13)].map((_, i) => (
+              <div
+                key={i}
+                className="bg-white text-center text-black p-6 rounded-lg shadow-lg w-64 shrink-0"
+              >
+                <div className="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-4"></div>
+                <h4 className="font-semibold text-lg">John Doe {i + 1}</h4>
+                <p className="text-sm">Lorem Ipsum</p>
+              </div>
+            ))}
           </div>
         </div>
+
       </div>
     </section>
   );
