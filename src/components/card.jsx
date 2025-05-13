@@ -17,8 +17,8 @@ const ServiceCard = ({ icon, title, subtitle, link }) => {
 
 const ServiceCards = () => {
     return (
-        <div className="container mx-auto px-4 relative z-10 mt-[-70px] flex justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl">
+        <div className="container mx-auto px-4 relative z-10 mt-[-70px] flex flex-col items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl w-full">
                 <ServiceCard
                     icon={<IconAward stroke={1.5} className="h-12 w-12" />}
                     title="Merk Paten"
@@ -37,6 +37,8 @@ const ServiceCards = () => {
                     subtitle="Lihat Detail"
                     link="/daftar-hak-merk"
                 />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full max-w-5xl mt-5">
                 <ServiceCard
                     icon={<IconTag stroke={1.5} className="h-12 w-12" />}
                     title="Indikasi Geografis"
