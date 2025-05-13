@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from "../../assets/images/logo.png"
 
-const Navbar = () => {
+const Navbar = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false); // To handle mobile menu open/close
   const [isSticky, setIsSticky] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null); // Controls active desktop dropdown
@@ -77,7 +77,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar md:sticky ${isSticky ? 'navbar-fixed' : 'absolute'}`}>
+    <nav className={`navbar md:sticky ${isSticky ? 'navbar-fixed' : 'absolute'} ${className}`}>
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center space-x-4">
           <Link to="/">
@@ -85,40 +85,21 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="hidden md:flex space-x-4 font-manrope">
-          <div 
-            className="relative group"
-            onClick={() => setActiveDropdown(activeDropdown === 'home' ? null : 'home')}
-          >
-            <div 
-              className={`nav-link flex items-center cursor-pointer ${isSticky ? 'text-white' : 'text-white'}`}
-            >
-              Home
-              <svg 
-                className="w-4 h-4 ml-1" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24" 
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </div>
-            {activeDropdown === 'home' && renderDesktopDropdown('home')}
-          </div>
+          <Link to="/" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Home</Link>
 
-          <div 
+          <div
             className="relative group"
             onClick={() => setActiveDropdown(activeDropdown === 'layanan' ? null : 'layanan')}
           >
-            <div 
+            <div
               className={`nav-link flex items-center cursor-pointer ${isSticky ? 'text-white' : 'text-white'}`}
             >
               Layanan
-              <svg 
-                className="w-4 h-4 ml-1" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24" 
+              <svg
+                className="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
@@ -127,19 +108,19 @@ const Navbar = () => {
             {activeDropdown === 'layanan' && renderDesktopDropdown('layanan')}
           </div>
 
-          <div 
+          <div
             className="relative group"
             onClick={() => setActiveDropdown(activeDropdown === 'rekap' ? null : 'rekap')}
           >
-            <div 
+            <div
               className={`nav-link flex items-center cursor-pointer ${isSticky ? 'text-white' : 'text-white'}`}
             >
               Rekap
-              <svg 
-                className="w-4 h-4 ml-1" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24" 
+              <svg
+                className="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
@@ -170,16 +151,16 @@ const Navbar = () => {
 
       {isOpen && (
         <div className={`md:hidden p-2 font-manrope font-medium ${isSticky ? 'bg-[#B82132] bg-opacity-40 text-white' : 'bg-[#B82132] text-white'}`}>
-          <div 
+          <div
             className="flex items-center justify-between px-4 py-2 cursor-pointer"
             onClick={() => toggleMobileDropdown('home')}
           >
             <Link to="/" className="block nav-link">Home</Link>
-            <svg 
-              className={`w-4 h-4 transform transition-transform ${mobileActiveDropdown === 'home' ? 'rotate-180' : ''}`} 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24" 
+            <svg
+              className={`w-4 h-4 transform transition-transform ${mobileActiveDropdown === 'home' ? 'rotate-180' : ''}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
@@ -187,16 +168,16 @@ const Navbar = () => {
           </div>
           {mobileActiveDropdown === 'home' && renderMobileDropdown('home')}
 
-          <div 
+          <div
             className="flex items-center justify-between px-4 py-2 cursor-pointer"
             onClick={() => toggleMobileDropdown('layanan')}
           >
             <Link to="/layanan" className="block nav-link">Layanan</Link>
-            <svg 
-              className={`w-4 h-4 transform transition-transform ${mobileActiveDropdown === 'layanan' ? 'rotate-180' : ''}`} 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24" 
+            <svg
+              className={`w-4 h-4 transform transition-transform ${mobileActiveDropdown === 'layanan' ? 'rotate-180' : ''}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
@@ -204,16 +185,16 @@ const Navbar = () => {
           </div>
           {mobileActiveDropdown === 'layanan' && renderMobileDropdown('layanan')}
 
-          <div 
+          <div
             className="flex items-center justify-between px-4 py-2 cursor-pointer"
             onClick={() => toggleMobileDropdown('rekap')}
           >
             <Link to="/rekap" className="block nav-link">Laporan</Link>
-            <svg 
-              className={`w-4 h-4 transform transition-transform ${mobileActiveDropdown === 'rekap' ? 'rotate-180' : ''}`} 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24" 
+            <svg
+              className={`w-4 h-4 transform transition-transform ${mobileActiveDropdown === 'rekap' ? 'rotate-180' : ''}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />

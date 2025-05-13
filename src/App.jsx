@@ -7,6 +7,7 @@ import CatalogPage from './pages/CatalogPage';
 import GuidePage from './pages/GuidePage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import NotFoundPage from './pages/NotFoundPage';
 import './App.css';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/panduan" element={<GuidePage/>}/>
           <Route path="/login" element={<LoginPage/>}/>
           <Route path="/register" element={<RegisterPage/>}/>
+          <Route path="*" element={<NotFoundPage/>}/>
         </Routes>
       </Router>
     </>
