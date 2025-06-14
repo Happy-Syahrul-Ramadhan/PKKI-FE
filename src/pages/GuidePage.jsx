@@ -5,7 +5,8 @@ import Footer from "../components/Footer";
 
 const sidebarItems = [
   "Paten",
-  "Pengenalan Merek",
+  "Paten Sederhana",
+  "Merek Dagang",
   "Hak Cipta",
   "Desain Industri",
 ];
@@ -17,8 +18,6 @@ const contentData = {
       <h1 className="text-xl md:text-2xl font-bold mb-4">Paten</h1>
       <div className="space-y-4 text-sm md:text-base">
         <div>
-          <span className="font-bold">Apa itu Paten?</span>
-          <br />
           Paten adalah hak eksklusif yang diberikan oleh negara kepada inventor atas hasil invensinya di bidang teknologi untuk jangka waktu tertentu melaksanakan sendiri invensi tersebut atau memberikan persetujuan kepada pihak lain untuk melaksanakannya.
           <br /><br />
           Teknologi yang dimaksud mencakup semua jenis teknologi, dari teknologi yang bersifat sangat sederhana hingga teknologi canggih yang mutakhir. 
@@ -26,26 +25,9 @@ const contentData = {
           Contohnya bisa berupa teknologi sederhana seperti tusuk gigi hingga teknologi nano dan teknologi Artificial Intelligence (AI), seluruhnya dapat dilindungi dengan sistem paten sepanjang memenuhi persyaratan patentabilitas (baru, inventif dan dapat diterapkan dalam industri) dan ketentuan lain dalam Undang-Undang paten.
         </div>
         <div>
-          <span className="font-bold">Paten Sederhana</span>
-          <br />
-          Paten sederhana secara khusus  Diberikan untuk invensi yang baru, pengembangan dari produk atau proses yang telah ada, dan dapat diterapkan dalam industri. Cakupan kalimnya hanya Produk atau proses/metode. Jumlah klaim Hanya terdapat 1 (satu) klaim mandiri dalam satu
-          kesatuan invensi. Pengumumannya akan dilakukan 3 (tiga) Bulan setelah tanggal penerimaan dengan jangka waktu pengumuman Selama 2 (dua) bulan. Pemeriksaan Substansif dilaksanakan maksimum 7 (tujuh) Bulan sejak berakhirnya masa pengumuman. Jangka waktu perlindungan yaitu 10 (sepuluh) tahun sejak tanggal penerimaan.
-        </div>
-        <div>
           <span className="font-bold">Pengertian Invensi</span>
           <br />
           Invensi adalah ide inventor yang dituangkan ke dalam suatu kegiatan pemecahan masalah yang spesifik di bidang teknologi, dapat berupa produk atau proses atau penyempurnaan dan pengembangan produk atau proses.
-        </div>
-        <div>
-          <span className="font-bold">Perbedaan Paten dan Paten Sederhana</span>
-          <ol className="list-decimal ml-5 mt-2">
-            <li className="mb-2">
-              Paten diberikan untuk invensi yang baru, mengandung langkah inventif, dan dapat diterapkan dalam industri. Sementara paten sederhana diberikan untuk invensi yang baru, berkembang, mempunyai nilai guna praktis, dan dapat diterapkan dalam industri.
-            </li>
-            <li>
-              Paten sederhana dibatasi dengan satu klaim mandiri, sedangkan paten jumlah klaimnya tidak dibatasi.
-            </li>
-          </ol>
         </div>
         <div>
           <span className="font-bold">Invensi dapat diberikan jika invensi tersebut</span>
@@ -68,9 +50,53 @@ const contentData = {
       </div>
     </>
   ),
-  "Pengenalan Merek": (
+  "Paten Sederhana": (
     <>
-      <h1 className="text-xl md:text-2xl font-bold mb-4">Pengenalan Merek</h1>
+      <h1 className="text-xl md:text-2xl font-bold mb-4">Paten Sederhana</h1>
+      <div>
+          Paten adalah hak eksklusif yang diberikan oleh negara kepada inventor atas hasil invensinya di bidang teknologi untuk jangka waktu tertentu melaksanakan sendiri invensi tersebut atau memberikan persetujuan kepada pihak lain untuk melaksanakannya.
+          <br /><br />
+          Teknologi yang dimaksud mencakup semua jenis teknologi, dari teknologi yang bersifat sangat sederhana hingga teknologi canggih yang mutakhir. 
+          <br /><br />
+          Contohnya bisa berupa teknologi sederhana seperti tusuk gigi hingga teknologi nano dan teknologi Artificial Intelligence (AI), seluruhnya dapat dilindungi dengan sistem paten sepanjang memenuhi persyaratan patentabilitas (baru, inventif dan dapat diterapkan dalam industri) dan ketentuan lain dalam Undang-Undang paten.
+        </div>
+        <div>
+          <br />
+          <h2 className="font-bold">Paten Sederhana</h2>
+          Paten sederhana secara khusus  Diberikan untuk invensi yang baru, pengembangan dari produk atau proses yang telah ada, dan dapat diterapkan dalam industri. Cakupan kalimnya hanya Produk atau proses/metode. Jumlah klaim Hanya terdapat 1 (satu) klaim mandiri dalam satu
+          kesatuan invensi. Pengumumannya akan dilakukan 3 (tiga) Bulan setelah tanggal penerimaan dengan jangka waktu pengumuman Selama 2 (dua) bulan. Pemeriksaan Substansif dilaksanakan maksimum 7 (tujuh) Bulan sejak berakhirnya masa pengumuman. Jangka waktu perlindungan yaitu 10 (sepuluh) tahun sejak tanggal penerimaan.
+        </div>
+        <div>
+          <br />
+          <span className="font-bold">Pengertian Invensi</span>
+          <br />
+          Invensi adalah ide inventor yang dituangkan ke dalam suatu kegiatan pemecahan masalah yang spesifik di bidang teknologi, dapat berupa produk atau proses atau penyempurnaan dan pengembangan produk atau proses.
+        </div>
+        <div>
+          <br />
+          <span className="font-bold">Invensi dapat diberikan jika invensi tersebut</span>
+          <ol className="list-decimal ml-5 mt-2">
+            <li className="mb-2">Baru, jika pada saat pengajuan permohonan Paten invensi tersebut tidak sama dengan teknologi yang diungkapkan sebelumnya.</li>
+            <li className="mb-2">Mengandung langkah inventif, jika invensi tersebut merupakan hal yang tidak dapat diduga sebelumnya bagi seseorang yang mempunyai keahlian di bidang teknik.</li>
+            <li>Dapat diterapkan dalam industri, jika invensi tersebut dapat dilaksanakan dalam industri sebagaimana dimaksud.</li>
+          </ol>
+        </div>
+        <div>
+          <br />
+          <span className="font-bold">Masa Perlindungan Paten</span>
+          <ol className="list-decimal ml-5 mt-2">
+            <li className="mb-2">Paten diberikan untuk jangka waktu selama 20 tahun sejak tanggal penerimaan permohonan Paten.</li>
+            <li>Paten sederhana diberikan untuk jangka waktu 10 tahun sejak tanggal penerimaan permohonan Paten sederhana.</li>
+          </ol>
+        </div>
+        <div>
+          <span className="italic text-gray-600">*Contoh surat pernyataan kepemilikan invensi yang sudah diisi*</span>
+        </div>
+    </>
+  ),
+  "Merek Dagang": (
+    <>
+      <h1 className="text-xl md:text-2xl font-bold mb-4">Merek Dagang</h1>
       <div className="space-y-4 text-sm md:text-base">
         <p>
           Merek adalah tanda yang dapat ditampilkan secara grafis berupa gambar, logo, nama, kata, huruf, angka, susunan warna, dalam bentuk 2 (dua) dimensi dan/atau 3 (tiga) dimensi, suara, hologram, atau kombinasi dari 2 (dua) atau lebih unsur tersebut untuk membedakan barang dan/atau jasa yang diproduksi oleh orang atau badan hukum dalam kegiatan perdagangan barang dan/atau jasa.
