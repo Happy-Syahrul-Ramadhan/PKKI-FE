@@ -128,7 +128,7 @@ const GuidePage = () => {
         {/* Sidebar */}
         <div className={`
           ${isSidebarOpen ? 'block' : 'hidden'} md:block
-          w-full md:w-56 bg-white rounded-lg md:rounded-l-2xl shadow-md p-4 mb-4 md:mb-0 md:mr-4 z-50 relative
+          w-full md:w-56 bg-white rounded-lg md:rounded-l-2xl shadow-md p-4 mb-4 md:mb-0 md:mr-4 z-40 relative
         `}>
           <ul>
             {sidebarItems.map((item, idx) => (
