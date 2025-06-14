@@ -17,19 +17,24 @@ const contentData = {
       <h1 className="text-xl md:text-2xl font-bold mb-4">Paten</h1>
       <div className="space-y-4 text-sm md:text-base">
         <div>
-          <span className="font-bold">Apakah Paten Itu?</span>
+          <span className="font-bold">Apa itu Paten?</span>
           <br />
-          Paten adalah hak eksklusif inventor atas invensi di bidang teknologi untuk selama waktu tertentu melaksanakan sendiri atau memberikan persetujuan kepada pihak lain untuk melaksanakan invensinya.
+          Paten adalah hak eksklusif yang diberikan oleh negara kepada inventor atas hasil invensinya di bidang teknologi untuk jangka waktu tertentu melaksanakan sendiri invensi tersebut atau memberikan persetujuan kepada pihak lain untuk melaksanakannya.
+          <br /><br />
+          Teknologi yang dimaksud mencakup semua jenis teknologi, dari teknologi yang bersifat sangat sederhana hingga teknologi canggih yang mutakhir. 
+          <br /><br />
+          Contohnya bisa berupa teknologi sederhana seperti tusuk gigi hingga teknologi nano dan teknologi Artificial Intelligence (AI), seluruhnya dapat dilindungi dengan sistem paten sepanjang memenuhi persyaratan patentabilitas (baru, inventif dan dapat diterapkan dalam industri) dan ketentuan lain dalam Undang-Undang paten.
+        </div>
+        <div>
+          <span className="font-bold">Paten Sederhana</span>
+          <br />
+          Paten sederhana secara khusus  Diberikan untuk invensi yang baru, pengembangan dari produk atau proses yang telah ada, dan dapat diterapkan dalam industri. Cakupan kalimnya hanya Produk atau proses/metode. Jumlah klaim Hanya terdapat 1 (satu) klaim mandiri dalam satu
+          kesatuan invensi. Pengumumannya akan dilakukan 3 (tiga) Bulan setelah tanggal penerimaan dengan jangka waktu pengumuman Selama 2 (dua) bulan. Pemeriksaan Substansif dilaksanakan maksimum 7 (tujuh) Bulan sejak berakhirnya masa pengumuman. Jangka waktu perlindungan yaitu 10 (sepuluh) tahun sejak tanggal penerimaan.
         </div>
         <div>
           <span className="font-bold">Pengertian Invensi</span>
           <br />
           Invensi adalah ide inventor yang dituangkan ke dalam suatu kegiatan pemecahan masalah yang spesifik di bidang teknologi, dapat berupa produk atau proses atau penyempurnaan dan pengembangan produk atau proses.
-        </div>
-        <div>
-          <span className="font-bold">Paten Sederhana</span>
-          <br />
-          Setiap invensi berupa produk atau alat yang baru dan mempunyai nilai guna praktis dengan bentuk, konfigurasi, konstruksi atau komponennya dapat memperoleh perlindungan hukum dalam bentuk paten sederhana.
         </div>
         <div>
           <span className="font-bold">Perbedaan Paten dan Paten Sederhana</span>
@@ -68,10 +73,49 @@ const contentData = {
       <h1 className="text-xl md:text-2xl font-bold mb-4">Pengenalan Merek</h1>
       <div className="space-y-4 text-sm md:text-base">
         <p>
-          Merek adalah tanda yang berupa gambar, nama, kata, huruf, angka, susunan warna, atau kombinasi dari unsur-unsur tersebut yang memiliki daya pembeda dan digunakan dalam kegiatan perdagangan barang atau jasa.
+          Merek adalah tanda yang dapat ditampilkan secara grafis berupa gambar, logo, nama, kata, huruf, angka, susunan warna, dalam bentuk 2 (dua) dimensi dan/atau 3 (tiga) dimensi, suara, hologram, atau kombinasi dari 2 (dua) atau lebih unsur tersebut untuk membedakan barang dan/atau jasa yang diproduksi oleh orang atau badan hukum dalam kegiatan perdagangan barang dan/atau jasa.
+          <br />
+          Pemakaian Merek berfungsi sebagai:
+          <ol className="list-decimal ml-5 mt-2">
+            <li>Tanda pengenal untuk membedakan hasil produksi yang dihasilkan seseorang atau beberapa orang secara bersama-sama atau badan hukum dengan produksi orang lain atau badan hukum lainnya;</li>
+            <li>Alat promosi, sehingga mempromosikan hasil produksinya cukup dengan menyebut Mereknya;</li>
+            <li>Jaminan atas mutu barangnya;</li>
+            <li>Penunjuk asal barang/jasa dihasilkan.</li>
+          </ol>
         </p>
         <p>
-          Perlindungan merek diberikan untuk jangka waktu 10 tahun dan dapat diperpanjang.
+          Pendaftaran Merek berfungsi sebagai:
+          <ol className="list-decimal ml-5 mt-2">
+            <li>Alat bukti bagi pemilik yang berhak atas Merek yang didaftarkan;</li>
+            <li>Dasar penolakan terhadap Merek yang sama keseluruhan atau sama pada pokoknya yang dimohonkan pendaftaran oleh orang lain untuk barang/jasa sejenisnya;</li>
+            <li>Dasar untuk mencegah orang lain memakai Merek yang sama keseluruhan atau  sama  pada pokoknya  dalam  peredaran  untuk barang/jasa sejenisnya.</li>
+          </ol>
+        </p>
+        <p>
+          Adapun merek yang bisa didaftarkan yaitu :
+          <ol className="list-decimal ml-5 mt-2">
+            <li>bertentangan dengan ideologi negara, peraturan perundang-undangan, moralitas, agama, kesusilaan, atau ketertiban umum;</li>
+            <li>sama dengan, berkaitan dengan, atau hanya menyebut barang dan/atau jasa yang dimohonkan pendaftarannya;</li>
+            <li>memuat unsur yang dapat menyesatkan masyarakat tentang asal, kualitas, jenis, ukuran, macam, tujuan penggunaan barang dan/atau jasa yang dimohonkan pendaftarannya atau merupakan nama varietas tanaman yang dilindungi untuk barang dan/atau jasa yang sejenis;</li>
+            <li>memuat keterangan yang tidak sesuai dengan kualitas, manfaat, atau khasiat dari barang dan/atau jasa yang diproduksi;</li>
+            <li>tidak memiliki daya pembeda; dan/atau</li>
+            <li>merupakan nama umum dan/atau lambang milik umum.</li>
+          </ol>
+        </p>
+        <p>
+          Permohonan pendaftaran Merek ditolak apabila Merek tersebut:
+          <ol className="list-decimal ml-5 mt-2">
+            <li>mempunyai persamaan pada pokoknya atau keseluruhannya dengan Merek milik pihak lain yang sudah terdaftar lebih dahulu untuk barang dan/atau jasa yang sejenis;</li>
+            <li>mempunyai persamaan pada pokoknya atau keseluruhannya dengan Merek yang sudah terkenal milik pihak lain untuk barang dan/atau jasa sejenis;</li>
+            <li>mempunyai persamaan pada pokoknya atau keseluruhannya dengan Merek yang sudah terkenal milik pihak lain untuk barang dan/atau jasa tidak sejenis sepanjang memenuhi persyaratan tertentu yang ditetapkan lebih lanjut dengan peraturan pemerintah;</li>
+            <li>mempunyai persamaan pada pokoknya atau keseluruhannya dengan indikasi-geografis yang sudah dikenal;</li>
+            <li>merupakan atau menyerupai nama orang terkenal, foto, atau nama badan hukum yang dimiliki orang lain, kecuali atas persetujuan tertulis dari yang berhak;</li>
+            <li>merupakan tiruan atau menyerupai nama atau singkatan nama, bendera, lambang atau simbol atau emblem negara atau lembaga nasional maupun internasional, kecuali atas persetujuan tertulis dari pihak yang berwenang;</li>
+            <li>merupakan tiruan atau menyerupai tanda atau cap atau stempel resmi yang digunakan oleh Negara atau lembaga pemerintah, kecuali atas persetujuan tertulis dari pihak yang berwenang.</li>
+          </ol>
+        </p>
+        <p>
+          Merek terdaftar mendapatkan perlindungan hukum untuk jangka waktu 10 tahun sejak tanggal penerimaan permohonan pendaftaran Merek yang bersangkutan dan jangka waktu perlindungan itu dapat diperpanjang.
         </p>
       </div>
     </>
@@ -81,10 +125,35 @@ const contentData = {
       <h1 className="text-xl md:text-2xl font-bold mb-4">Hak Cipta</h1>
       <div className="space-y-4 text-sm md:text-base">
         <p>
-          Hak cipta adalah hak eksklusif bagi pencipta atau pemegang hak cipta untuk mengumumkan atau memperbanyak ciptaannya atau memberikan izin kepada pihak lain untuk itu.
+          Pelindungan hak cipta tidak diberikan kepada ide atau gagasan tetapi diberikan kepada wujud dari ide, oleh karena itu Ciptaan harus memiliki bentuk yang khas bersifat pribadi dan menunjukkan keaslian sebagai ciptaan yang lahir karena kreativitas, atau keahlian sehingga ciptaan itu dapat dilihat, dibaca atau didengar. Oleh karena itu dalam Undang-Undang Nomor 28 Tahun 2014 Tentang Hak Cipta (Undang-Undang Hak Cipta) menyebutkan bahwa Hak Cipta adalah hak eksklusif pencipta yang timbul secara otomatis berdasarkan prinsip deklaratif setelah suatu ciptaan diwujudkan dalam bentuk nyata tanpa mengurangi pembatasan sesuai dengan ketentuan peraturan perundang- undangan dalam persetujuan TRIPs dipertegas bahwa pelindungan hak cipta meliputi ekspresi dan tidak meliputi ide, prosedur, metode kerja atau konsep matematis sejenisnya.
+          Hak Cipta adalah hak eksklusif pencipta yang timbul secara otomatis berdasarkan prinsip deklaratif setelah suatu ciptaan diwujudkan dalam bentuk nyata tanpa mengurangi pembatasan sesuai dengan ketentuan peraturan perundang-undangan.
+          Hak Terkait itu adalah hak yang berkaitan dengan Hak Cipta yang merupakan hak eksklusif bagi pelaku pertunjukan, produser fonogram, atau lembaga penyiaran.
+          <br />
+          <br />
+          Ciptaan yang di lindungi:
+          <ol className="list-decimal ml-5 mt-2">
+            <li>Buku, program komputer, pamflet, perwajahan (layout) karya tulis yang diterbitkan, dan semua hasil karya tulis lain;</li>
+            <li>Ceramah, kuliah, pidato, dan ciptaan lain yang sejenis dengan itu;</li>
+            <li>Alat peraga yang dibuat untuk kepentingan pendidikan dan ilmu pengetahuan;</li>
+            <li>Lagu atau musik dengan atau tanpa teks;</li>
+            <li>Drama atau drama musikal, tari, koreografi, pewayangan, dan pantomim;</li>
+            <li>Seni rupa dalam segala bentuk seperti seni lukis, gambar, seni ukir, seni kaligrafi, seni pahat, seni patung, kolase, dan seni terapan;</li>
+            <li>Arsitektur;</li>
+            <li>Peta;</li>
+            <li>Seni Batik;</li>
+            <li>Fotografi;</li>
+            <li>Terjemahan, tafsir, saduran, bunga rampai, dan karya lain dari hasil pengalihwujudan.</li>
+          </ol>
         </p>
         <p>
-          Hak cipta berlaku selama hidup pencipta ditambah 70 tahun setelah kematiannya.
+          Masa perlindungan hak cipta : 
+          <ol className="list-decimal ml-5 mt-2">
+            <li>Perlindungan Hak Cipta : Seumur Hidup Pencipta + 70 Tahun.</li>
+            <li>Program Komputer : 50 tahun Sejak pertama kali dipublikasikan.</li>
+            <li>Pelaku : 50 tahun sejak pertama kali dipertunjukkan.</li>
+            <li>Produser Rekaman : 50 tahun sejak Ciptaan difiksasikan.</li>
+            <li>Lembaga Penyiaran : 20 tahun sejak pertama kali disiarkan.</li>
+          </ol>
         </p>
       </div>
     </>
@@ -94,10 +163,16 @@ const contentData = {
       <h1 className="text-xl md:text-2xl font-bold mb-4">Desain Industri</h1>
       <div className="space-y-4 text-sm md:text-base">
         <p>
-          Desain industri adalah suatu kreasi tentang bentuk, konfigurasi, atau komposisi garis atau warna atau gabungan dari semuanya yang memberikan kesan estetis dan dapat diwujudkan dalam tiga dimensi atau dua dimensi.
+          Desain Industri adalah suatu kreasi tentang bentuk, konfigurasi atau komposisi garis atau warna, atau garis dan warna, atau gabungan daripadanya yang berbentuk tiga dimensi atau dua dimensi yang memberikan kesan estetis dan dapat diwujudkan dalam pola tiga dimensi atau dua dimensi serta dapat dipakai untuk menghasilkan suatu produk, barang, komoditas industri atau kerajinan tangan.
+          <br />
+          Adapun Desain Industri yang dapat didaftarkan yaitu:
+          <ol className="list-decimal ml-5 mt-2">
+            <li>Desain Industri yang memiliki kebaruan (novelty) dengan catatan jika pada tanggal penerimaan permohonan pendaftaran Desain Industri tersebut tidak sama dengan pengungkapan Desain Industri yang telah ada sebelumnya;</li>
+            <li>Tidak bertentangan dengan peraturan perundang-undangan yang berlaku, ketertiban umum, agama, atau kesusilaan.</li>
+          </ol>
         </p>
         <p>
-          Perlindungan desain industri diberikan selama 10 tahun dan dapat diperpanjang.
+          Masa pelindungan desain industri adalah 10 tahun sejak tanggal penerimaan. Pemegang hak desain industri memiliki hak eksklusif untuk melaksanakan hak yang dimilikinya dan untuk melarang orang lain tanpa persetujuannya membuat, memakai, menjual, mengimpor, mengekspor, dan/atau mengedarkan produk-produk terkait.
         </p>
       </div>
     </>
