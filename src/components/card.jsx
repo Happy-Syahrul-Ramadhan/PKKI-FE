@@ -17,25 +17,25 @@ const ServiceCard = ({ icon, title, subtitle, link }) => {
 
 const ServiceCards = () => {
     return (
-        <div className="container mx-auto px-4 relative z-10 mt-[-70px] flex flex-col items-center">
+        <div className="container mx-auto px-4 relative z-10 mt-[-50px] flex flex-col items-center">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl w-full">
                 <ServiceCard
                     icon={<IconAward stroke={1.5} className="h-12 w-12" />}
                     title="Merk Paten"
                     subtitle="Lihat Detail"
-                    link="/daftar-hak-cipta"
+                    link="/panduan"
                 />
                 <ServiceCard
                     icon={<IconGavel stroke={1.5} className="h-12 w-12" />}
                     title="Desain Industri"
                     subtitle="Lihat Detail"
-                    link="/daftar-hak-paten"
+                    link="/panduan"
                 />
                 <ServiceCard
                     icon={<IconTag stroke={1.5} className="h-12 w-12" />}
                     title="Hak Cipta"
                     subtitle="Lihat Detail"
-                    link="/daftar-hak-merk"
+                    link="/panduan"
                 />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full max-w-5xl mt-5">
@@ -43,13 +43,13 @@ const ServiceCards = () => {
                     icon={<IconTag stroke={1.5} className="h-12 w-12" />}
                     title="Indikasi Geografis"
                     subtitle="Lihat Detail"
-                    link="/daftar-hak-merk"
+                    link="/panduan"
                 />
                 <ServiceCard
                     icon={<IconTag stroke={1.5} className="h-12 w-12" />}
                     title="DTLST"
                     subtitle="Lihat Detail"
-                    link="/daftar-hak-merk"
+                    link="/panduan"
                 />
             </div>
         </div>
