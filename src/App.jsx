@@ -9,6 +9,7 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import NotFoundPage from './pages/NotFoundPage';
 import './App.css';
+import Visualisasi from './pages/Infografis';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/dokumen" element={<DocumentPage/>}/>
           <Route path="/katalog" element={<CatalogPage/>}/>
           <Route path="/panduan" element={<GuidePage/>}/>
+          <Route path="/infografis" element={<Visualisasi/>}/>
           <Route path="/login" element={<LoginPage/>}/>
           <Route path="/register" element={<RegisterPage/>}/>
           <Route path="*" element={<NotFoundPage/>}/>
