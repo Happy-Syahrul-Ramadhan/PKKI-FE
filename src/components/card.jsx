@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { IconAward, IconGavel, IconTag } from '@tabler/icons-react';
+import { IconTag, IconBulb, IconTool, IconCopyright, IconPalette  } from '@tabler/icons-react';
 
 
 const ServiceCard = ({ icon, title, subtitle, link }) => {
@@ -20,34 +20,34 @@ const ServiceCards = () => {
         <div className="container mx-auto px-4 relative z-10 mt-[-50px] flex flex-col items-center">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl w-full">
                 <ServiceCard
-                    icon={<IconAward stroke={1.5} className="h-12 w-12" />}
-                    title="Merk Paten"
+                    icon={<IconBulb stroke={1.5} className="h-12 w-12" />}
+                    title="Paten"
                     subtitle="Lihat Detail"
                     link="/panduan"
                 />
                 <ServiceCard
-                    icon={<IconGavel stroke={1.5} className="h-12 w-12" />}
-                    title="Desain Industri"
+                    icon={<IconTool stroke={1.5} className="h-12 w-12" />}
+                    title="Paten Sederhana"
                     subtitle="Lihat Detail"
                     link="/panduan"
                 />
                 <ServiceCard
                     icon={<IconTag stroke={1.5} className="h-12 w-12" />}
-                    title="Hak Cipta"
+                    title="Merek Dagang"
                     subtitle="Lihat Detail"
                     link="/panduan"
                 />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full max-w-5xl mt-5">
                 <ServiceCard
-                    icon={<IconTag stroke={1.5} className="h-12 w-12" />}
-                    title="Indikasi Geografis"
+                    icon={<IconCopyright stroke={1.5} className="h-12 w-12" />}
+                    title="Hak Cipta"
                     subtitle="Lihat Detail"
                     link="/panduan"
                 />
                 <ServiceCard
-                    icon={<IconTag stroke={1.5} className="h-12 w-12" />}
-                    title="DTLST"
+                    icon={<IconPalette stroke={1.5} className="h-12 w-12" />}
+                    title="Desain Industri"
                     subtitle="Lihat Detail"
                     link="/panduan"
                 />
