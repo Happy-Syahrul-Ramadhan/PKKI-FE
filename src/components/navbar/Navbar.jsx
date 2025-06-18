@@ -35,6 +35,7 @@ const Navbar = ({ className }) => {
           <Link to="/panduan" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Panduan</Link>
           <Link to="/infografis" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Infografis</Link> 
           <Link to="/kontak" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>Kontak</Link>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY9kAw3mCl7Q4OX0X6nOkpIQxvqhYPhzarVbqsF0W3NP9drQ/viewform?usp=dialog" className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`} target="_blank" rel="noopener noreferrer">Lapor</a>
         </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>
@@ -51,6 +52,7 @@ const Navbar = ({ className }) => {
           <Link to="/panduan" className="block nav-link py-2 px-4">Panduan</Link>
           <Link to="/infografis" className="block nav-link py-2 px-4">Infografis</Link>
           <Link to="/kontak" className="block nav-link py-2 px-4">Kontak</Link>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY9kAw3mCl7Q4OX0X6nOkpIQxvqhYPhzarVbqsF0W3NP9drQ/viewform?usp=dialog" className="block nav-link py-2 px-4" target="_blank" rel="noopener noreferrer">Lapor</a>
         </div>
       )}
     </nav>
